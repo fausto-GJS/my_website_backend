@@ -8,7 +8,7 @@ router.get('/',(req,res)=>{
 })
 */
 router.get('/portfolio', (req, res) => {
-    const data = [
+    res.json(
         {
             'id': 1,
             'titulo': 'teste',
@@ -29,11 +29,11 @@ router.get('/portfolio', (req, res) => {
             'titulo': 'mongoDB',
             'description': 'conectando no mongoDB',
         }
-    ];
-    res.json({
-        sucess:true,
-        data
-    })
+    );
+   // res.json({
+   //     sucess:true,
+  //      data
+  //  })
 })
 
 module.exports = router
