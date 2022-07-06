@@ -1,5 +1,7 @@
+const router = require('express').Router()
 
-app.get('/portfolio', (req, res) => {
+
+router.get('/portfolio', (req, res) => {
     res.json([
         {
             'id': 1,
@@ -23,3 +25,5 @@ app.get('/portfolio', (req, res) => {
         }
     ])
 })
+
+module.exports = router
