@@ -24,7 +24,7 @@ router.get('/portfolio', (req, res) => {
         }
     ];
     res.json({
-        sucess:true,
+        success:true,
         data
     })
 })
