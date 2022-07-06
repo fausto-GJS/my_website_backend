@@ -3,6 +3,6 @@ const app = express()
 const api = require('./server/routes')
 const PORT = process.env.PORT || 5000
 
-app.use('/api', api)
+app.use('/', api)
 
 app.listen(PORT)
