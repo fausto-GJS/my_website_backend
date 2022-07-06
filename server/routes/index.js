@@ -1,8 +1,7 @@
 const router = require('express').Router()
 
-
 router.get('/portfolio', (req, res) => {
-    res.json([
+    const data = [
         {
             'id': 1,
             'titulo': 'teste',
@@ -23,7 +22,7 @@ router.get('/portfolio', (req, res) => {
             'titulo': 'mongoDB',
             'description': 'conectando no mongoDB',
         }
-    ])
+    ]
 })
 
 module.exports = router
