@@ -1,5 +1,12 @@
 const router = require('express').Router()
 
+router.get('/',(req,res)=>{
+    res.json({
+        success: false,
+        message: 'Please, do not call /api, it is for our server'
+    })
+})
+
 router.get('/portfolio', (req, res) => {
     const data = [
         {
