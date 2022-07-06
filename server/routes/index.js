@@ -22,7 +22,11 @@ router.get('/portfolio', (req, res) => {
             'titulo': 'mongoDB',
             'description': 'conectando no mongoDB',
         }
-    ]
+    ];
+    res.json({
+        sucess:true,
+        data
+    })
 })
 
 module.exports = router
