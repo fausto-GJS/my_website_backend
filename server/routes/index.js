@@ -7,7 +7,8 @@ router.get('/',(req,res)=>{
     })
 })
 */
-router.get('/portfolio', (req, res) => {[
+router.get('/portfolio', (req, res) => {
+    const data = [
         {
             'id': 1,
             'titulo': 'teste',
