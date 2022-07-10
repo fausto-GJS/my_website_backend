@@ -1,11 +1,11 @@
 const router = require('express').Router()
 
 const projetos = [
-    {
+ /*   {
         "id":0,
         "title":"sem projeto",
         "description":"sem comentario"
-    }
+    } */
 ]
 
 function checkProjeto (req,res,next){
